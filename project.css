@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(135deg, #0B0E14, #111827, #0F172A);
+    min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #F9FAFB;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #cbd5e1;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+    border-color: #2563EB;
+    background: rgba(255,255,255,0.12);
+    color: white;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.list-group-item {
+    background: rgba(255,255,255,0.06);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px !important;
+    margin-bottom: 10px;
+}
+
+.alert {
+    border-radius: 12px;
+}
+
+.log-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+pre {
+    color: #F9FAFB;
+    white-space: pre-wrap;
+}
+
+a {
+    text-decoration: none;
+}
