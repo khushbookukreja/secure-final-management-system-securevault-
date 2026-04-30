@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="glass-card mx-auto" style="max-width: 950px;">
+    <h1 class="text-center mb-3">🔐 SecureVault</h1>
+    <p class="text-center text-muted mb-5">Secure File Management System</p>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <h4>Register</h4>
+            <form method="POST" action="/register">
+                <input type="text" name="username" class="form-control mb-3" placeholder="Username" required>
+                <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+                <button class="btn btn-primary w-100">Register</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Login</h4>
+            <form method="POST" action="/login">
+                <input type="text" name="username" class="form-control mb-3" placeholder="Username" required>
+                <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+                <button class="btn btn-success w-100">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
