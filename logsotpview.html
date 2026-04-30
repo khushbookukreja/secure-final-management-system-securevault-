@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="glass-card">
+    <h2 class="mb-4">📝 Security Logs</h2>
+
+    <div class="log-box">
+        <pre>{{ logs }}</pre>
+    </div>
+
+    <a href="/admin" class="btn btn-secondary mt-4">Back to Admin Panel</a>
+</div>
+{% endblock %}
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="glass-card mx-auto" style="max-width: 500px;">
+    <h2 class="text-center mb-4">🔐 OTP Verification</h2>
+    <p class="text-center text-muted mb-4">Enter the OTP generated for your login session</p>
+
+    <form method="POST" action="/otp">
+        <input type="text" name="otp" class="form-control mb-3" placeholder="Enter OTP" required>
+        <button class="btn btn-primary w-100">Verify OTP</button>
+    </form>
+</div>
+{% endblock %}
+
+{% extends "base.html" %}
+{% block content %}
+<pre>{{content}}</pre>
+{% endblock %}
